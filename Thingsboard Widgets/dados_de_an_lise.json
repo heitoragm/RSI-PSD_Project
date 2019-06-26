@@ -1,0 +1,150 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "cards",
+    "typeAlias": "entities_table",
+    "type": "latest",
+    "title": "New widget",
+    "sizeX": 24,
+    "sizeY": 4,
+    "config": {
+      "timewindow": {
+        "realtime": {
+          "interval": 1000,
+          "timewindowMs": 86400000
+        },
+        "aggregation": {
+          "type": "NONE",
+          "limit": 200
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "4px",
+      "settings": {
+        "enableSearch": true,
+        "displayPagination": true,
+        "defaultPageSize": 10,
+        "defaultSortOrder": "entityName",
+        "displayEntityName": false,
+        "displayEntityType": false,
+        "entitiesTitle": "Dados de análise"
+      },
+      "title": "Dados de análise",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "padding": "5px 10px 5px 10px"
+      },
+      "useDashboardTimewindow": false,
+      "showLegend": false,
+      "datasources": [
+        {
+          "type": "entity",
+          "dataKeys": [
+            {
+              "name": "dispositivosTabela",
+              "type": "timeseries",
+              "label": "Dispositivos",
+              "color": "#2196f3",
+              "settings": {
+                "columnWidth": "0px",
+                "useCellStyleFunction": false,
+                "useCellContentFunction": false
+              },
+              "_hash": 0.07675951239057743
+            },
+            {
+              "name": "pnlsTabela",
+              "type": "timeseries",
+              "label": "PNLs",
+              "color": "#9c27b0",
+              "settings": {
+                "columnWidth": "0px",
+                "useCellStyleFunction": false,
+                "useCellContentFunction": false
+              },
+              "_hash": 0.009458925254546391
+            },
+            {
+              "name": "probestotalTabela",
+              "type": "timeseries",
+              "label": "Probes",
+              "color": "#f44336",
+              "settings": {
+                "columnWidth": "0px",
+                "useCellStyleFunction": false,
+                "useCellContentFunction": false
+              },
+              "_hash": 0.8499118428445049
+            },
+            {
+              "name": "probesdiretoTabela",
+              "type": "timeseries",
+              "label": "Probes diretos",
+              "color": "#ffc107",
+              "settings": {
+                "columnWidth": "0px",
+                "useCellStyleFunction": false,
+                "useCellContentFunction": false
+              },
+              "_hash": 0.4547390040823831
+            },
+            {
+              "name": "probesbroadTabela",
+              "type": "timeseries",
+              "label": "Probes Broadcast",
+              "color": "#607d8b",
+              "settings": {
+                "columnWidth": "0px",
+                "useCellStyleFunction": false,
+                "useCellContentFunction": false
+              },
+              "_hash": 0.9561013030574725
+            },
+            {
+              "name": "numSSIDsTabela",
+              "type": "timeseries",
+              "label": "SSIDs",
+              "color": "#9c27b0",
+              "settings": {
+                "columnWidth": "0px",
+                "useCellStyleFunction": false,
+                "useCellContentFunction": false
+              },
+              "_hash": 0.7584540018654303
+            }
+          ],
+          "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+        }
+      ],
+      "widgetStyle": {},
+      "actions": {}
+    },
+    "id": "25e23401-4bd2-6188-7adb-186b18cf9617"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "teste1",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "4738ec60-89f0-11e9-ab81-df49ef51599c"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 24,
+    "sizeY": 4
+  },
+  "originalColumns": 24
+}

@@ -1,0 +1,764 @@
+{
+  "title": "Projeto RSI&PSD",
+  "configuration": {
+    "widgets": {
+      "25e23401-4bd2-6188-7adb-186b18cf9617": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "entities_table",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 24,
+        "sizeY": 4,
+        "config": {
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 86400000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSearch": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "entityName",
+            "displayEntityName": false,
+            "displayEntityType": false,
+            "entitiesTitle": "Dados de análise"
+          },
+          "title": "Dados de análise",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "dispositivosTabela",
+                  "type": "timeseries",
+                  "label": "Dispositivos",
+                  "color": "#2196f3",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.07675951239057743
+                },
+                {
+                  "name": "pnlsTabela",
+                  "type": "timeseries",
+                  "label": "PNLs",
+                  "color": "#9c27b0",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.009458925254546391
+                },
+                {
+                  "name": "probestotalTabela",
+                  "type": "timeseries",
+                  "label": "Probes",
+                  "color": "#f44336",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.8499118428445049
+                },
+                {
+                  "name": "probesdiretoTabela",
+                  "type": "timeseries",
+                  "label": "Probes diretos",
+                  "color": "#ffc107",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.4547390040823831
+                },
+                {
+                  "name": "probesbroadTabela",
+                  "type": "timeseries",
+                  "label": "Probes Broadcast",
+                  "color": "#607d8b",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.9561013030574725
+                },
+                {
+                  "name": "numSSIDsTabela",
+                  "type": "timeseries",
+                  "label": "SSIDs",
+                  "color": "#9c27b0",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.7584540018654303
+                }
+              ],
+              "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+            }
+          ],
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "25e23401-4bd2-6188-7adb-186b18cf9617"
+      },
+      "c0f8718a-9e13-4437-da27-9a58cc8a8622": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "Timeseries table",
+        "sizeX": 12,
+        "sizeY": 7,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9",
+              "dataKeys": [
+                {
+                  "name": "numSSIDPopularidadeSSID",
+                  "type": "timeseries",
+                  "label": "Quantidade de SSIDs",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.5414745781001622
+                },
+                {
+                  "name": "numDispositivoPopularidadeSSID",
+                  "type": "timeseries",
+                  "label": "Quantidade de dispositivos",
+                  "color": "#4caf50",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.7317097793332571
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": true,
+            "displayPagination": true,
+            "defaultPageSize": 10
+          },
+          "title": "Distribuição de popularidade dos SSIDs",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "c0f8718a-9e13-4437-da27-9a58cc8a8622"
+      },
+      "f103eef4-d14e-c53c-2f3c-a22ec6b78aa5": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "timeseries_table",
+        "type": "timeseries",
+        "title": "Timeseries table",
+        "sizeX": 12,
+        "sizeY": 7,
+        "row": 0,
+        "col": 2,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9",
+              "dataKeys": [
+                {
+                  "name": "tamanhoPNL",
+                  "type": "timeseries",
+                  "label": "Comprimento da PNL",
+                  "color": "#2196f3",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.048162105223315654
+                },
+                {
+                  "name": "numDispositivoTamanhoPNL",
+                  "type": "timeseries",
+                  "label": "Quantidade de dispositivos",
+                  "color": "#4caf50",
+                  "settings": {
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": false
+                  },
+                  "_hash": 0.28805442603024767
+                }
+              ]
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "interval": 1000,
+              "timewindowMs": 2592000000
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "showTimestamp": true,
+            "displayPagination": true,
+            "defaultPageSize": 10
+          },
+          "title": "Tamanho da lista de PNLs",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {}
+        },
+        "id": "f103eef4-d14e-c53c-2f3c-a22ec6b78aa5"
+      },
+      "44eaabf8-7646-aef8-5d16-18c145ae0bfd": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "bars",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 12,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "AppleDistFor",
+                  "type": "timeseries",
+                  "label": "Apple",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.23112022981742464
+                },
+                {
+                  "name": "Samsung ElectronicsDistFor",
+                  "type": "timeseries",
+                  "label": "Samsung",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.5544859148635183
+                },
+                {
+                  "name": "NokiaDistFor",
+                  "type": "timeseries",
+                  "label": "Nokia",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.38212097417783264
+                },
+                {
+                  "name": "HTCDistFor",
+                  "type": "timeseries",
+                  "label": "HTC",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.399152962236644
+                },
+                {
+                  "name": "Sony Mobile CommunicationsDistFor",
+                  "type": "timeseries",
+                  "label": "Sony",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.0730203818368449
+                },
+                {
+                  "name": "RimDistFor",
+                  "type": "timeseries",
+                  "label": "RIM",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.9080031464806392
+                }
+              ],
+              "entityAliasId": "789fcce5-d63a-1978-c59e-a9a994e47c3a"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Distribuição de fornecedores",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "44eaabf8-7646-aef8-5d16-18c145ae0bfd"
+      },
+      "b145f8a4-0cef-8226-e121-f6f005f25aa0": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "bars",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 12,
+        "sizeY": 8,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "AppleExpMar",
+                  "type": "timeseries",
+                  "label": "Apple",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.13308827712644666
+                },
+                {
+                  "name": "Samsung ElectronicsExpMar",
+                  "type": "timeseries",
+                  "label": "Samsung",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.29084236207582304
+                },
+                {
+                  "name": "NokiaExpMar",
+                  "type": "timeseries",
+                  "label": "Nokia",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.24763595583691245
+                },
+                {
+                  "name": "HTCExpMar",
+                  "type": "timeseries",
+                  "label": "HTC",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6572512098306694
+                },
+                {
+                  "name": "Sony Mobile CommunicationsExpMar",
+                  "type": "timeseries",
+                  "label": "Sony",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.37812320894015095
+                },
+                {
+                  "name": "RimExpMar",
+                  "type": "timeseries",
+                  "label": "RIM",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.4789680519535089
+                }
+              ],
+              "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Fornecedores que expuseram parte ou toda a PNL",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {},
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": false,
+            "showMax": false,
+            "showAvg": true,
+            "showTotal": false
+          }
+        },
+        "id": "b145f8a4-0cef-8226-e121-f6f005f25aa0"
+      },
+      "2fb369d0-d3df-967f-10c7-73a8586d6e76": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "bars",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 12,
+        "sizeY": 7,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "1PopSSID",
+                  "type": "timeseries",
+                  "label": "1",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.4652526447388171
+                },
+                {
+                  "name": "5PopSSID",
+                  "type": "timeseries",
+                  "label": "5",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.4324902166328204
+                },
+                {
+                  "name": "10PopSSID",
+                  "type": "timeseries",
+                  "label": "10",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.03017081021110246
+                },
+                {
+                  "name": "60PopSSID",
+                  "type": "timeseries",
+                  "label": "60",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6427976420476407
+                },
+                {
+                  "name": "300PopSSID",
+                  "type": "timeseries",
+                  "label": "300",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.7666482949364694
+                }
+              ],
+              "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Distribuição de popularidade dos SSIDs - Barra",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "2fb369d0-d3df-967f-10c7-73a8586d6e76"
+      },
+      "8e894acd-3d19-f970-bd18-f3b3f2cd17cc": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "bars",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 12,
+        "sizeY": 7,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "dataKeys": [
+                {
+                  "name": "1tamPNL",
+                  "type": "timeseries",
+                  "label": "1",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.4652526447388171
+                },
+                {
+                  "name": "6tamPNL",
+                  "type": "timeseries",
+                  "label": "6",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.4324902166328204
+                },
+                {
+                  "name": "11tamPNL",
+                  "type": "timeseries",
+                  "label": "11",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.03017081021110246
+                },
+                {
+                  "name": "16tamPNL",
+                  "type": "timeseries",
+                  "label": "16",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6427976420476407
+                },
+                {
+                  "name": "21tamPNL",
+                  "type": "timeseries",
+                  "label": "21",
+                  "color": "#607d8b",
+                  "settings": {},
+                  "_hash": 0.7666482949364694
+                },
+                {
+                  "name": "26tamPNL",
+                  "type": "timeseries",
+                  "label": "26",
+                  "color": "#9c27b0",
+                  "settings": {},
+                  "_hash": 0.740552015156728
+                },
+                {
+                  "name": "28tamPNL",
+                  "type": "timeseries",
+                  "label": "28",
+                  "color": "#8bc34a",
+                  "settings": {},
+                  "_hash": 0.17663763388127462
+                }
+              ],
+              "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {},
+          "title": "Tamanho da lista de PNLs - Barra",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "widgetStyle": {},
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {}
+        },
+        "id": "8e894acd-3d19-f970-bd18-f3b3f2cd17cc"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "asdasd",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "25e23401-4bd2-6188-7adb-186b18cf9617": {
+                "sizeX": 24,
+                "sizeY": 4,
+                "row": 0,
+                "col": 0
+              },
+              "c0f8718a-9e13-4437-da27-9a58cc8a8622": {
+                "sizeX": 12,
+                "sizeY": 7,
+                "row": 12,
+                "col": 0
+              },
+              "f103eef4-d14e-c53c-2f3c-a22ec6b78aa5": {
+                "sizeX": 12,
+                "sizeY": 7,
+                "row": 12,
+                "col": 12
+              },
+              "44eaabf8-7646-aef8-5d16-18c145ae0bfd": {
+                "sizeX": 12,
+                "sizeY": 8,
+                "row": 4,
+                "col": 0
+              },
+              "b145f8a4-0cef-8226-e121-f6f005f25aa0": {
+                "sizeX": 12,
+                "sizeY": 8,
+                "row": 4,
+                "col": 12
+              },
+              "2fb369d0-d3df-967f-10c7-73a8586d6e76": {
+                "sizeX": 12,
+                "sizeY": 7,
+                "row": 19,
+                "col": 0
+              },
+              "8e894acd-3d19-f970-bd18-f3b3f2cd17cc": {
+                "sizeX": 12,
+                "sizeY": 7,
+                "row": 19,
+                "col": 12
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "color": "rgba(0,0,0,0.870588)",
+              "columns": 24,
+              "margins": [
+                10,
+                10
+              ],
+              "backgroundSizeMode": "100%"
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "789fcce5-d63a-1978-c59e-a9a994e47c3a": {
+        "id": "789fcce5-d63a-1978-c59e-a9a994e47c3a",
+        "alias": "teste",
+        "filter": {
+          "type": "entityName",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityNameFilter": "teste"
+        }
+      },
+      "79d5502b-149a-0fa9-3609-c0e21d3b65d9": {
+        "id": "79d5502b-149a-0fa9-3609-c0e21d3b65d9",
+        "alias": "teste1",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "4738ec60-89f0-11e9-ab81-df49ef51599c"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1559914694967,
+          "endTimeMs": 1560001094967
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true
+    }
+  },
+  "name": "Projeto RSI&PSD"
+}

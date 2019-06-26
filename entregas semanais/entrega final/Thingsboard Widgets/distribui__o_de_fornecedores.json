@@ -1,0 +1,110 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "bars",
+    "type": "latest",
+    "title": "New widget",
+    "sizeX": 12,
+    "sizeY": 8,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "dataKeys": [
+            {
+              "name": "AppleDistFor",
+              "type": "timeseries",
+              "label": "Apple",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.23112022981742464
+            },
+            {
+              "name": "Samsung ElectronicsDistFor",
+              "type": "timeseries",
+              "label": "Samsung",
+              "color": "#4caf50",
+              "settings": {},
+              "_hash": 0.5544859148635183
+            },
+            {
+              "name": "NokiaDistFor",
+              "type": "timeseries",
+              "label": "Nokia",
+              "color": "#f44336",
+              "settings": {},
+              "_hash": 0.38212097417783264
+            },
+            {
+              "name": "HTCDistFor",
+              "type": "timeseries",
+              "label": "HTC",
+              "color": "#ffc107",
+              "settings": {},
+              "_hash": 0.399152962236644
+            },
+            {
+              "name": "Sony Mobile CommunicationsDistFor",
+              "type": "timeseries",
+              "label": "Sony",
+              "color": "#607d8b",
+              "settings": {},
+              "_hash": 0.0730203818368449
+            },
+            {
+              "name": "RimDistFor",
+              "type": "timeseries",
+              "label": "RIM",
+              "color": "#9c27b0",
+              "settings": {},
+              "_hash": 0.9080031464806392
+            }
+          ],
+          "entityAliasId": "789fcce5-d63a-1978-c59e-a9a994e47c3a"
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {},
+      "title": "Distribuição de fornecedores",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {}
+    },
+    "id": "44eaabf8-7646-aef8-5d16-18c145ae0bfd"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "teste",
+        "filter": {
+          "type": "entityName",
+          "resolveMultiple": true,
+          "entityType": "DEVICE",
+          "entityNameFilter": "teste"
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 12,
+    "sizeY": 8
+  },
+  "originalColumns": 24
+}

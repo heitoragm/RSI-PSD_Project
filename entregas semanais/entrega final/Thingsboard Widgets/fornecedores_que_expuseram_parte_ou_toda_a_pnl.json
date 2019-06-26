@@ -1,0 +1,119 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "bars",
+    "type": "latest",
+    "title": "New widget",
+    "sizeX": 12,
+    "sizeY": 8,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "dataKeys": [
+            {
+              "name": "AppleExpMar",
+              "type": "timeseries",
+              "label": "Apple",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.13308827712644666
+            },
+            {
+              "name": "Samsung ElectronicsExpMar",
+              "type": "timeseries",
+              "label": "Samsung",
+              "color": "#4caf50",
+              "settings": {},
+              "_hash": 0.29084236207582304
+            },
+            {
+              "name": "NokiaExpMar",
+              "type": "timeseries",
+              "label": "Nokia",
+              "color": "#f44336",
+              "settings": {},
+              "_hash": 0.24763595583691245
+            },
+            {
+              "name": "HTCExpMar",
+              "type": "timeseries",
+              "label": "HTC",
+              "color": "#ffc107",
+              "settings": {},
+              "_hash": 0.6572512098306694
+            },
+            {
+              "name": "Sony Mobile CommunicationsExpMar",
+              "type": "timeseries",
+              "label": "Sony",
+              "color": "#607d8b",
+              "settings": {},
+              "_hash": 0.37812320894015095
+            },
+            {
+              "name": "RimExpMar",
+              "type": "timeseries",
+              "label": "RIM",
+              "color": "#9c27b0",
+              "settings": {},
+              "_hash": 0.4789680519535089
+            }
+          ],
+          "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {},
+      "title": "Fornecedores que expuseram parte ou toda a PNL",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {},
+      "legendConfig": {
+        "position": "bottom",
+        "showMin": false,
+        "showMax": false,
+        "showAvg": true,
+        "showTotal": false
+      }
+    },
+    "id": "b145f8a4-0cef-8226-e121-f6f005f25aa0"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "teste1",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "4738ec60-89f0-11e9-ab81-df49ef51599c"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 12,
+    "sizeY": 8
+  },
+  "originalColumns": 24
+}

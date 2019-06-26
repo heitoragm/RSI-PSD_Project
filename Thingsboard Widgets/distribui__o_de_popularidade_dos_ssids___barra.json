@@ -1,0 +1,104 @@
+{
+  "widget": {
+    "isSystemType": true,
+    "bundleAlias": "charts",
+    "typeAlias": "bars",
+    "type": "latest",
+    "title": "New widget",
+    "sizeX": 12,
+    "sizeY": 7,
+    "config": {
+      "datasources": [
+        {
+          "type": "entity",
+          "dataKeys": [
+            {
+              "name": "1PopSSID",
+              "type": "timeseries",
+              "label": "1",
+              "color": "#2196f3",
+              "settings": {},
+              "_hash": 0.4652526447388171
+            },
+            {
+              "name": "5PopSSID",
+              "type": "timeseries",
+              "label": "5",
+              "color": "#4caf50",
+              "settings": {},
+              "_hash": 0.4324902166328204
+            },
+            {
+              "name": "10PopSSID",
+              "type": "timeseries",
+              "label": "10",
+              "color": "#f44336",
+              "settings": {},
+              "_hash": 0.03017081021110246
+            },
+            {
+              "name": "60PopSSID",
+              "type": "timeseries",
+              "label": "60",
+              "color": "#ffc107",
+              "settings": {},
+              "_hash": 0.6427976420476407
+            },
+            {
+              "name": "300PopSSID",
+              "type": "timeseries",
+              "label": "300",
+              "color": "#607d8b",
+              "settings": {},
+              "_hash": 0.7666482949364694
+            }
+          ],
+          "entityAliasId": "79d5502b-149a-0fa9-3609-c0e21d3b65d9"
+        }
+      ],
+      "timewindow": {
+        "realtime": {
+          "timewindowMs": 60000
+        }
+      },
+      "showTitle": true,
+      "backgroundColor": "#fff",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "padding": "8px",
+      "settings": {},
+      "title": "Distribuição de popularidade dos SSIDs - Barra",
+      "dropShadow": true,
+      "enableFullscreen": true,
+      "widgetStyle": {},
+      "titleStyle": {
+        "fontSize": "16px",
+        "fontWeight": 400
+      },
+      "useDashboardTimewindow": true,
+      "showLegend": false,
+      "actions": {}
+    },
+    "id": "2fb369d0-d3df-967f-10c7-73a8586d6e76"
+  },
+  "aliasesInfo": {
+    "datasourceAliases": {
+      "0": {
+        "alias": "teste1",
+        "filter": {
+          "type": "singleEntity",
+          "singleEntity": {
+            "entityType": "DEVICE",
+            "id": "4738ec60-89f0-11e9-ab81-df49ef51599c"
+          },
+          "resolveMultiple": false
+        }
+      }
+    },
+    "targetDeviceAliases": {}
+  },
+  "originalSize": {
+    "sizeX": 12,
+    "sizeY": 7
+  },
+  "originalColumns": 24
+}
